@@ -67,6 +67,7 @@ async def combined_middleware(request: Request, call_next):
             "X-Request-ID, X-Client-Id, Content-Type"
         )
         response.headers["Vary"] = "Origin"
+        response.headers["Access-Control-Expose-Headers"] = "X-Request-ID"
 
     return response
 
