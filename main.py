@@ -12,7 +12,7 @@ app = FastAPI()
 EMAIL = os.getenv("EMAIL", "YOUR_LOGGED_IN_EMAIL")
 ALLOWED_ORIGINS = {
     "https://app-jjp99d.example.com",
-    # Add your exam page's actual origin here
+    "https://exam.sanand.workers.dev",
 }
 
 WINDOW = 10
